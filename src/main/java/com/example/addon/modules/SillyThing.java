@@ -39,7 +39,7 @@ public class SillyThing extends Module {
         }
         mc.player.setPos(magicx,magicy,magicz);
         mc.player.addVelocity(0,5,0);
-        this.toggle();
+        toggle();
     }
 
 

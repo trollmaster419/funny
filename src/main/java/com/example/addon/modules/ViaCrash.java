@@ -33,7 +33,7 @@ public class ViaCrash extends Module {
             index = (index + 1) % 4;
         }
         info("crash done, expect death");
-        this.toggle();
+        toggle();
     }
 
 
