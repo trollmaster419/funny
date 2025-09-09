@@ -46,7 +46,7 @@ public abstract class ExampleMixin {
         List<String> funlist = List.of("axshulkers", "eshulkerbox", "deluxeauctions", "chestshop");
         List<String> dumplist = List.of("placeholderapi", "litebans", "holographicdisplays","commandpanels", "plugman", "plugmanx");
         try {
-            if (packet.id() == 1337) {
+            if (packet.id() == -1337) {
                 for (CommandSuggestionsS2CPacket.Suggestion i : packet.suggestions()) {
                     if (aclist.contains(i.text().toLowerCase())) {
                         info("Anticheat: §c" + i.text());
@@ -59,8 +59,9 @@ public abstract class ExampleMixin {
                     }
 
 
+
                 }
-            } else if (packet.id() == 1338) {
+            } else if (packet.id() == -1338) {
                 for (CommandSuggestionsS2CPacket.Suggestion i : packet.suggestions()) {
                     info("Skript command: §a" + i.text());
                 }
