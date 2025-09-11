@@ -48,7 +48,7 @@ public abstract class ExampleMixin {
 
 
                 }
-            } else if (packet.id() == -1338) {
+            } else if (packet.id() == -1338) { // hehe funny skript
                 for (CommandSuggestionsS2CPacket.Suggestion i : packet.suggestions()) {
                     info("Skript command: §a" + i.text());
                 }

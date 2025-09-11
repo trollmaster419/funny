@@ -14,7 +14,7 @@ public class ShitOpsec extends Module {
     @Override
     public void onActivate() {
         if (mc.getNetworkHandler() != null) {
-            mc.getNetworkHandler().sendPacket(new RequestCommandCompletionsC2SPacket(-1337,"/ver "));
+            mc.getNetworkHandler().sendPacket(new RequestCommandCompletionsC2SPacket(-1337,"/bukkit:about "));
             mc.getNetworkHandler().sendPacket(new RequestCommandCompletionsC2SPacket(-1338, "/skript:"));
             toggle();
         }
